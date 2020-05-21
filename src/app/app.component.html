@@ -1,0 +1,11 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="name" />
+  <input
+    type="file"
+    easy-file-form-control
+    [formGroup]="formGroup"
+    controlName="file"
+  />
+
+  <input value="Submit" type="submit" />
+</form>
